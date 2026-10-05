@@ -20,7 +20,9 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
     "http://localhost:5173",
-    "https://locallens-topaz.vercel.app"],
+    "https://locallens-topaz.vercel.app",
+    "https://locallens-hnenwu8bz-komeka71s-projects.vercel.app",
+    "https://locallens-4c6ubbha9-komeka71s-projects.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
