@@ -71,7 +71,7 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 
     try {
-      const response = await axios.post(`${API_URL}/api/plan`, { request });
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/plan`, { request }); 
       setResult(response.data);
     } catch (err) {
       console.error(err);
